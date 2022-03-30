@@ -33,7 +33,11 @@ function urn() {
 
 
 
-function work(computer, user) {
+function work() {
+
+    var computer = crn()
+    var user = urn()
+
     if ((computer > user) && (computer < 21)) {
         cpu++
         alert('The computer wins!')
@@ -62,7 +66,13 @@ function work(computer, user) {
 
 } 
 
-crn()
-urn()
+
 work()
 
+
+
+// c <= 20 h <= 20 c > h
+// c <= 20 h <= 20 c < h
+// c <= 20 h <= 20 c == h
+// c < 20 h > 20 
+// c > 20 h <= 20 
